@@ -6,11 +6,14 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import org.cj7.ubicate.utils.AndroidContextHolder
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        enableEdgeToEdge()
+        AndroidContextHolder.init(applicationContext)
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
 
         setContent {
             App()

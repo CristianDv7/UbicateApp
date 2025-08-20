@@ -49,6 +49,7 @@ kotlin {
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.negotiation)
             implementation(libs.kotlin.serialization)
+            implementation(libs.okio)
         }
 
         iosMain.dependencies {

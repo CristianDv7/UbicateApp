@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 // Datos para LocalContent
 @Serializable
-data class Locales(
+data class LocalesUbicate(
     val id: Int,
     val nombre: String,
     val imagen: String,
